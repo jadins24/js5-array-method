@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        table{
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            border-color: rgb(250, 237, 237);
+            text-align: center;
+        }
+        thead{
+            background-color:wheat;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+        th{
+            padding: 20px 0;
+        }
+        td{
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body> 
+    <h1></h1>
+    <table border>
+        <thead>
+            <th>S.NO</th>
+            <th>methods</th>
+            <th>definition</th>
+            <th>input</th>
+            <th>output</th>
+            <th>programe</th>
+        </thead>
+        <tbody>
+           <tr>
+			<td>1</td>
+			<td>concat</td>
+			<td>The concat() method returns a new array by merging two or more values/arrays.</td>
+			<td>a=[1,2],b=[3,4];c=a.concat(b)</td>
+			<td>c=[1,2,3,4]</td>
+			<td>let a=[1,2];<br>
+				let b=[3,4];<br>
+				document.write(a.concat(b));</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>entries</td>
+			<td>The entries() method returns a new Array Iterator object containing key/value pairs for each array index.</td>
+			<td>entry=['HTML','CSS','JAVASCRIPT','REACT JS'];<br>
+				result=entry.entries();</td>
+			<td>Array{}<br>
+				[0,'HTML']<br>
+				[1,'CSS']<br>
+				[2,'JAVASCRIPT']<br>
+				[3,'REACT JS']</td>
+			<td>var entry=['HTML','CSS','JAVASCRIPT','REACT JS'];<br>
+				var result=entry.entries();<br>
+				document.write(result);<br>
+				for(var e of result)</td>
+			
+		</tr>
+        <tr>
+			<td>3</td>
+			<td>constructor</td>
+			<td>The constructor property returns the constructor function for the array.</td>
+			<td>languages=['HTML','JAVASCRIPT','CSS'];<br>
+				constructor=languages.constructor;</td>
+			<td>[Function:array]</td>
+			<td>let languages=['','',''];<br>
+				let constructor=languages.constructor;<br>
+				document.write(constructor);</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>fillter()</td>
+			<td>The filter() method returns a new array with all elements that pass the test defined by the given function.</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>find()</td>
+			<td>The find() method returns the value of the first array element that satisfies the provided test function.</td>
+			<td>a=['10','8','14','31','65','1']<br>
+				index1=a.indexOf(31)<br>
+				index2=a.indexOf(8)</td>
+			<td>3<br>
+				1</td>
+			<td>var a=['10','8','14','31','65','1']<br>
+				var index1=a.index(31);<br>
+				document.write(index1);<br>
+				var index2=a.index();<br>
+				document.write(index1);<br>
+				</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>findIndex()</td>
+			<td>The findIndex() method returns the index of the first array element that satisfies the provided test function or else returns -1.</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>7</td>
+			<td>findLastIndex()</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>8</td>
+			<td>lastIndexOf()</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>9</td>
+			<td>map()</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>pop()</td>
+			<td>The pop() method removes the last element from an array and returns that element.</td>
+			<td>main=[1,2,3,4,5,6,7,8];<br>
+				b=main.pop();</td>
+			<td>b=[1,2,3,4,5,6,7]</td>
+			<td>let main=[1,2,3,4,5,6,7,8];<br>
+				b=main.pop();<br>
+				document.write(main)</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>push()</td>
+			<td>The push() method adds zero or more elements to the end of the array.</td>
+			<td>main=[1,2,3,4,5,6,7,8];<br>
+				b=main.pop();</td>
+			<td>b=[1,2,3,4,5,6,7,8,10]</td>
+			<td>let main=[1,2,3,4,5,6,7,8];<br>
+				b=main.push("10");<br>
+				document.write(main)</td>
+			
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>resuce()</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>13</td>
+			<td>reduce()</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>14</td>
+			<td>reverse()</td>
+			<td>The reverse() method returns the array in reverse order.</td>
+			<td>number=[1,2,3,4,5];<br>
+				reversed=number.reverse();</td>
+			<td>[5,4,3,2,1]</td>
+			<td>let number=[1,2,3,4,5,];<br>
+				let reversed=number.reverse();
+				document.write(reversed);</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>shift()</td>
+			<td>The shift() method removes the first element from an array and returns that element.</td>
+			<td>a=[0,1,2,3,4,5,6,7,8];<br>
+			a.shift()</td>
+			<td>[1,2,3,4,5,6,7,8,]</td>
+			<td>let a=[0,1,2,3,4,5,6,7,8];<br>
+				a.shift()<br>
+				document.write(main;)</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>slice()</td>
+			<td>The slice() method returns a shallow copy of a portion of an array into a new array object.</td>
+			<td>var skill=['d','i','n','e','s','h'];<br>
+				var result=skill.slice(1,2);</td>
+			<td>i,n</td>
+			<td>var skill=['d','i','n','e','s','h'];<br>
+				var result=skill.slice(1,2);<br>
+				document.write(result);</td>
+		</tr><tr>
+			<td>17</td>
+			<td>unshift()</td>
+			<td>The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.</td>
+			<td>a=[1,2,3,4,5,6,7,8];<br>
+			a.unshift();</td>
+			<td>[0,1,2,3,4,5,6,7,8]</td>
+			<td>a=[1,2,3,4,5,6,7,8];<br>
+				a.unshift(0);<br>
+				document.write(a);</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>toLocalString</td>
+			<td>The toLocaleString() method returns a string representing the elements of the array in a particular locale.</td>
+			<td>str=["angular","javascript","node","bootstrap"];<br>
+				var result=str.toLocalString();</td>
+			<td>angular,javascript,node,bootstrap</td>
+			<td>var str=["angular","javascript","node","bootstrap"];<br>
+				var result=str.toLocalString();<br>
+				document.write(str);</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>toString()</td>
+			<td>The toString() method returns a string formed by the elements of the given array.</td>
+			<td>str=['d','i','n','e','s','h'];<br>
+				result=str.toString();</td>
+			<td>string:d,i,n,e,s,h</td>
+			<td>str=['d','i','n','e','s','h'];<br>
+				result=str.toString();<br>
+				doument.write("After converting string: "+str)</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>indexOf()</td>
+			<td></td>
+			<td>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+        </tbody>
+    </table>
+
+
+   
+    <script  src="js/main.js" ></script>
+</body>
+</html>
